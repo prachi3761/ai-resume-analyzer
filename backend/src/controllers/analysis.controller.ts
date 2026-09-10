@@ -4,7 +4,6 @@ import { analysisService } from "../services/analysis.service";
 import { analyzeSchema, jobMatchSchema } from "../validators/analysis";
 import { sendSuccess, sendError } from "../helpers/response";
 import { ClientError } from "../utils/http-errors";
-import { deductCredit } from "../middlewares/credits";
 import type { AuthenticatedRequest } from "../types";
 
 const JOB_FETCH_TIMEOUT_MS = 12_000;
@@ -69,12 +68,7 @@ async function fetchJobPageHtml(
   }
 }
 
-/** Send result + deduct 1 AI credit, include remaining balance in response header */
-async function sendWithCredit(res: Response, userId: string, data: unknown) {
-  const remaining = await deductCredit(userId);
-  res.setHeader("X-AI-Credits-Remaining", remaining);
-  sendSuccess(res, data);
-}
+
 
 export class AnalysisController {
   async analyzeResume(
@@ -97,7 +91,7 @@ export class AnalysisController {
         req.user.userId
       );
       console.log("[AnalysisController] analyzeResume OK", { resumeId });
-      await sendWithCredit(res, req.user.userId, analysis);
+      sendSuccess(res, analysis);
     } catch (error) {
       if (error instanceof ClientError) {
         sendError(res, error.message, error.statusCode, { code: error.code });
@@ -127,7 +121,7 @@ export class AnalysisController {
         jobDescription,
         req.user.userId
       );
-      await sendWithCredit(res, req.user.userId, result);
+      sendSuccess(res, result);
     } catch (error) {
       if (error instanceof Error && error.message === "Resume not found") {
         sendError(res, error.message, 404);
@@ -137,30 +131,7 @@ export class AnalysisController {
     }
   }
 
-  async generateInterviewQuestions(
-    req: AuthenticatedRequest,
-    res: Response,
-    next: NextFunction
-  ) {
-    try {
-      if (!req.user) {
-        sendError(res, "Unauthorized", 401);
-        return;
-      }
-      const { resumeId } = analyzeSchema.parse(req.body);
-      const questions = await analysisService.generateInterviewQuestions(
-        resumeId,
-        req.user.userId
-      );
-      await sendWithCredit(res, req.user.userId, questions);
-    } catch (error) {
-      if (error instanceof Error && error.message === "Resume not found") {
-        sendError(res, error.message, 404);
-        return;
-      }
-      next(error);
-    }
-  }
+  
 
   async generateSmartFeedback(
     req: AuthenticatedRequest,
@@ -177,7 +148,7 @@ export class AnalysisController {
         resumeId,
         req.user.userId
       );
-      await sendWithCredit(res, req.user.userId, feedback);
+      sendSuccess(res, feedback);
     } catch (error) {
       if (error instanceof Error && error.message === "Resume not found") {
         sendError(res, error.message, 404);
@@ -203,7 +174,7 @@ export class AnalysisController {
         return;
       }
       const result = await analysisService.rewriteBulletPoint(text.trim());
-      await sendWithCredit(res, req.user.userId, result);
+     sendSuccess(res, result);
     } catch (error) {
       next(error);
     }
@@ -256,7 +227,7 @@ export class AnalysisController {
         jobDescription,
         type
       );
-      await sendWithCredit(res, req.user.userId, result);
+      sendSuccess(res, result);
     } catch (error) {
       if (error instanceof ClientError) {
         sendError(res, error.message, error.statusCode, { code: error.code });
@@ -339,7 +310,7 @@ export class AnalysisController {
       if (!req.user) { sendError(res, "Unauthorized", 401); return; }
       const { resumeId } = analyzeSchema.parse(req.body);
       const result = await analysisService.getCareerGrowth(resumeId, req.user.userId);
-      await sendWithCredit(res, req.user.userId, result);
+      sendSuccess(res, result);
     } catch (error) { if (error instanceof Error && error.message === "Resume not found") { sendError(res, error.message, 404); return; } next(error); }
   }
 
@@ -348,7 +319,7 @@ export class AnalysisController {
       if (!req.user) { sendError(res, "Unauthorized", 401); return; }
       const { resumeId } = analyzeSchema.parse(req.body);
       const result = await analysisService.suggestProjects(resumeId, req.user.userId);
-      await sendWithCredit(res, req.user.userId, result);
+      sendSuccess(res, result);
     } catch (error) { if (error instanceof Error && error.message === "Resume not found") { sendError(res, error.message, 404); return; } next(error); }
   }
 
@@ -375,7 +346,7 @@ export class AnalysisController {
             }))
         : undefined;
       const result = await analysisService.chat(resumeId, req.user.userId, question, sanitizedHistory);
-      await sendWithCredit(res, req.user.userId, result);
+      sendSuccess(res, result);
     } catch (error) { if (error instanceof Error && error.message === "Resume not found") { sendError(res, error.message, 404); return; } next(error); }
   }
 
@@ -452,7 +423,7 @@ export class AnalysisController {
         return;
       }
 
-      await sendWithCredit(res, req.user.userId, result);
+      sendSuccess(res, result);
     } catch (error) {
       if (error instanceof Error && error.message === "Resume not found") {
         sendError(res, error.message, 404);

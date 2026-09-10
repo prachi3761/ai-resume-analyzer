@@ -1,43 +1,40 @@
 import { Router } from "express";
 import { analysisController } from "../controllers/analysis.controller";
 import { authenticate } from "../middlewares/auth";
-import { requireCredits } from "../middlewares/credits";
+
 
 const router = Router();
 
-// ═══════════════════════════════════════════════════════════════
-// AI-HEAVY routes (cost Gemini credits) — require credits
-// ═══════════════════════════════════════════════════════════════
 
 // POST /api/analysis/score
-router.post("/score", authenticate, requireCredits, (req, res, next) =>
+router.post("/score", authenticate,  (req, res, next) =>
   analysisController.analyzeResume(req, res, next)
 );
 
 // POST /api/analysis/job-match
-router.post("/job-match", authenticate, requireCredits, (req, res, next) =>
+router.post("/job-match", authenticate,  (req, res, next) =>
   analysisController.matchJob(req, res, next)
 );
 
 
 
 // POST /api/analysis/smart-feedback
-router.post("/smart-feedback", authenticate, requireCredits, (req, res, next) =>
+router.post("/smart-feedback", authenticate,  (req, res, next) =>
   analysisController.generateSmartFeedback(req, res, next)
 );
 
 // POST /api/analysis/generate-content
-router.post("/generate-content", authenticate, requireCredits, (req, res, next) =>
+router.post("/generate-content", authenticate,  (req, res, next) =>
   analysisController.generateContent(req, res, next)
 );
 
 // POST /api/analysis/career-growth
-router.post("/career-growth", authenticate, requireCredits, (req, res, next) =>
+router.post("/career-growth", authenticate,  (req, res, next) =>
   analysisController.getCareerGrowth(req, res, next)
 );
 
 // POST /api/analysis/suggest-projects
-router.post("/suggest-projects", authenticate, requireCredits, (req, res, next) =>
+router.post("/suggest-projects", authenticate,  (req, res, next) =>
   analysisController.suggestProjects(req, res, next)
 );
 
@@ -45,18 +42,16 @@ router.post("/suggest-projects", authenticate, requireCredits, (req, res, next) 
 
 
 // POST /api/analysis/match-url
-router.post("/match-url", authenticate, requireCredits, (req, res, next) =>
+router.post("/match-url", authenticate,  (req, res, next) =>
   analysisController.matchUrl(req, res, next)
 );
 
 
 
-// ═══════════════════════════════════════════════════════════════
-// LIGHTWEIGHT routes (rule-based, no Gemini cost) — no credits
-// ═══════════════════════════════════════════════════════════════
 
-// POST /api/analysis/rewrite (AI-powered, costs 1 credit)
-router.post("/rewrite", authenticate, requireCredits, (req, res, next) =>
+
+// POST /api/analysis/rewrite 
+router.post("/rewrite", authenticate,  (req, res, next) =>
   analysisController.rewriteBulletPoint(req, res, next)
 );
 
