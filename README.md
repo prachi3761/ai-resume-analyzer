@@ -243,11 +243,11 @@ Response
   ↓
 React UI
 ```
+## 🔐 Environment Variables
 
+### Backend — `backend/.env`
 
-
-🔐 Environment Variables
-Backend — backend/.env
+```env
 NODE_ENV=development
 PORT=5000
 
@@ -268,46 +268,59 @@ GEMINI_API_KEY=your-gemini-api-key
 FRONTEND_URL=http://localhost:3000
 
 ADMIN_EMAIL=your-admin-email@gmail.com
-    Svc --> Prisma
-    Prisma --> Mongo
+```
 
-    Store -.-> GoogleAPI
+### Frontend — `frontend/.env`
 
-
-Frontend — frontend/.env
+```env
 VITE_APP_NAME=AI Resume Analyzer
 VITE_API_URL=http://localhost:5000/api
 VITE_GOOGLE_CLIENT_ID=your-google-oauth-client-id.apps.googleusercontent.com
+```
 
-📁 Folder Structure
+> ⚠️ Never commit `.env` files or real API keys, passwords, database credentials, or secrets to GitHub.
+
+---
+
+## 📁 Folder Structure
+
+```text
 ai-resume-analyzer/
 ├── frontend/
 │   ├── src/
-│   │   ├── api/              # Axios client and API wrappers
-│   │   ├── components/       # Reusable UI components and layouts
-│   │   ├── pages/            # Landing, authentication and dashboard pages
-│   │   ├── hooks/            # Authentication and theme hooks
-│   │   ├── utils/            # PDF generation and utilities
-│   │   └── routes/           # Protected routes and router configuration
+│   │   ├── api/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   └── routes/
 │   └── index.html
 │
 ├── backend/
-│   ├── prisma/               # Prisma schema for MongoDB
+│   ├── prisma/
+│   │   └── schema.prisma
 │   ├── src/
-│   │   ├── controllers/      # Authentication and analysis controllers
-│   │   ├── services/         # AI, analysis and NLP services
-│   │   ├── middlewares/      # Authentication and error handling
-│   │   ├── routes/            # REST API routes
-│   │   ├── validators/        # Zod request validation
-│   │   └── server.ts          # Express server entry point
-│   └── uploads/               # Uploaded resume files
+│   │   ├── controllers/
+│   │   ├── services/
+│   │   ├── middlewares/
+│   │   ├── routes/
+│   │   ├── validators/
+│   │   └── server.ts
+│   └── uploads/
 │
-├── assets/                    # README screenshots
+├── assets/
 ├── .gitignore
 └── README.md
+```
 
-🗂️ Project Structure
-<details> <summary><strong>Click to expand full tree</strong></summary>
+---
+
+## 🗂️ Project Structure
+
+<details>
+<summary><strong>Click to expand full tree</strong></summary>
+
+```text
 ai-resume-analyzer/
 │
 ├── backend/
@@ -379,11 +392,16 @@ ai-resume-analyzer/
 ├── assets/
 ├── .gitignore
 └── README.md
+```
 </details>
-"The best way to predict the future is to build it."
+
+> "The best way to predict the future is to build it."
+
 <div align="center">
+
 Made with ❤️ and ☕ — If you found this useful, a ⭐ on the repo means the world!
 
-</div> ```
+</div>
+
 
 
