@@ -17,7 +17,7 @@
 [![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
 [![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io)
 [![Gemini](https://img.shields.io/badge/Gemini_AI-2.5-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-mh5n-five.vercel.app//)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-mh5n-five.vercel.app/)
 
 <br/>
 
@@ -102,10 +102,7 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 ### 🚀 7. Career Growth Hub & Projects
 <img src="./assets/career-hub.jpg" width="100%" />
 
-### 💬 8. Interactive AI Resume Assistant
-<img src="./assets/ai-chat.jpg" width="100%" />
-
-### 👤 9. User Profile & Preferences
+### 👤 8. User Profile & Preferences
 <img src="./assets/profile.jpg" width="100%" />
 
 ---
