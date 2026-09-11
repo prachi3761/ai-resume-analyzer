@@ -28,37 +28,6 @@
 
 [Live Demo](<div align="center">
 
-# 🧠 AI Resume Analyzer & Job Matcher
-
-### *Your Personal AI Recruiter — Land Your Dream Job Faster*
-
-<br/>
-
-### 🚀 **[▶ View Live Demo](https://ai-resume-analyzer-mh5n-five.vercel.app/)**
-
-<br/>
-
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Node.js](https://img.shields.io/badge/Node.js-22-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
-[![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
-[![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io)
-[![Gemini](https://img.shields.io/badge/Gemini_AI-2.5-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-mh5n-five.vercel.app//)
-
-<br/>
-
-![AI Resume Analyzer](./assets/landing-page.jpg)
-
-<br/>
-
-[Live Demo](https://ai-resume-analyzer-mh5n-five.vercel.app/) · [Get Started](#-getting-started) · [Features](#-core-features) · [Architecture](#-system-architecture)
-
-</div>
-
----
-
 ## 📑 Table of Contents
 
 - [Live Demo](#-live-demo)
@@ -74,8 +43,6 @@
 - [Project Structure](#-project-structure)
 -
 
-
----
 
 ## 🚀 Live Demo
 
@@ -130,7 +97,6 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 ### 🚀 7. Career Growth Hub & Projects
 <img src="./assets/career-hub.jpg" width="100%" />
 
-
 ### 👤 8. User Profile & Preferences
 <img src="./assets/profile.jpg" width="100%" />
 
@@ -139,83 +105,6 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 </div>
 
 ---
-
-## 📑 Table of Contents
-
-- [Live Demo](#-live-demo)
-- [The Problem & Solution](#-the-problem--solution)
-- [App Showcase](#-app-showcase)
-- [Core Features](#-core-features)
-- [Tech Stack](#-tech-stack)
-- [System Architecture](#-system-architecture)
-- [Database Schema](#-database-schema)
-- [Getting Started](#-getting-started)
-- [Environment Variables](#-environment-variables)
-- [Folder Structure](#-folder-structure)
-- [Project Structure](#-project-structure)
-
----
-
-## 🚀 Live Demo
-
-<div align="center">
-
-**🚀 [View Live Demo Here](https://ai-resume-analyzer-mh5n-five.vercel.app/)**
-
-Try the full app — upload a resume, get an AI-powered ATS score, generate cover letters, and explore career growth insights. No installation required.
-
-| | URL |
-| :--- | :--- |
-| 🌐 **Frontend** | [https://ai-resume-analyzer-mh5n-five.vercel.app/](https://ai-resume-analyzer-mh5n-five.vercel.app/) |
-| ⚙️ **Backend API** | [https://ai-resume-analyzer-pvqz9i220-prachis-projects-36151363.vercel.app/](https://ai-resume-analyzer-woad-eight-46.vercel.app/) |
-
-</div>
-
----
-
-## 💡 The Problem & Solution
-
-> **78% of resumes are rejected by ATS systems before a human ever reads them.**
-
-Job seekers spend hours crafting resumes — only to be silently filtered out. They never know *why* they're rejected, which keywords are missing, or how to tailor their resume for each role. The feedback loop is completely broken.
-
-**AI Resume Analyzer** fixes this. It's a full-stack SaaS platform that acts as your **personal AI recruiter**. Upload your resume once and instantly get a multi-dimensional ATS score, the exact keywords you're missing, AI-generated cover letters, 
-
----
-
-## 🖼 App Showcase
-
-### 🏠 1. Landing Page & Value Proposition
-<img src="./assets/landing-page.jpg" width="100%" />
-
-
-### 🔐 2. Frictionless Authentication (Sign In & Register)
-<p align="center">
-  <img src="./assets/auth1.jpg" width="49%" alt="Sign In Page" />
-  <img src="./assets/auth2.jpg" width="49%" alt="Create Account Page" />
-</p>
-
-### 📊 3. User Dashboard & History
-<img src="./assets/dashboard.jpg" width="100%" />
-
-### 🧠 4. Multi-Dimensional ATS Scoring
-<img src="./assets/analysis.jpg" width="100%" />
-
-### 🎯 5. Job Match & Skill Gap Analysis
-<img src="./assets/job-match.jpg" width="100%" />
-
-### ✍️ 6. AI Content Generator (Cover Letters & Bios)
-<img src="./assets/content-generator.jpg" width="100%" />
-
-### 🚀 7. Career Growth Hub & Projects
-<img src="./assets/career-hub.jpg" width="100%" />
-
-
-### 👤 8. User Profile & Preferences
-<img src="./assets/profile.jpg" width="100%" />
-
----
-
 ## 🚀 Core Features
 
 | Feature | Description |
@@ -538,9 +427,7 @@ ai-resume-analyzer/
 │
 └── README.md
 ```
-
 </details>
-
 
 <br/>
 
