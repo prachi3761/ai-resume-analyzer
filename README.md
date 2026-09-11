@@ -276,16 +276,11 @@ ADMIN_EMAIL=your-admin-email@gmail.com
 VITE_APP_NAME=AI Resume Analyzer
 VITE_API_URL=http://localhost:5000/api
 VITE_GOOGLE_CLIENT_ID=your-google-oauth-client-id.apps.googleusercontent.com
-```
-
-> ⚠️ Never commit `.env` files or real API keys, passwords, database credentials, or secrets to GitHub.
 
 ---
 
 ## 📁 Folder Structure
 
-```text
-ai-resume-analyzer/
 ├── frontend/
 │   ├── src/
 │   │   ├── api/
@@ -313,14 +308,8 @@ ai-resume-analyzer/
 └── README.md
 ```
 
----
-
 ## 🗂️ Project Structure
 
-<details>
-<summary><strong>Click to expand full tree</strong></summary>
-
-```text
 ai-resume-analyzer/
 │
 ├── backend/
