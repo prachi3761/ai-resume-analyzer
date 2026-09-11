@@ -11,14 +11,13 @@
 <br/>
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Node.js](https://img.shields.io/badge/Node.js-22-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
-[![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io)
+[![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io)
 [![Gemini](https://img.shields.io/badge/Gemini_AI-2.5-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-mh5n-five.vercel.app/)
-
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 
 <br/>
 
@@ -26,7 +25,14 @@
 
 <br/>
 
-[Live Demo](<div align="center">
+[Live Demo](https://ai-resume-analyzer-mh5n-five.vercel.app/) ·
+[Get Started](#-getting-started) ·
+[Features](#-core-features) ·
+[Architecture](#-system-architecture)
+
+</div>
+
+---
 
 ## 📑 Table of Contents
 
@@ -41,8 +47,8 @@
 - [Environment Variables](#-environment-variables)
 - [Folder Structure](#-folder-structure)
 - [Project Structure](#-project-structure)
--
 
+---
 
 ## 🚀 Live Demo
 
@@ -50,14 +56,14 @@
 
 **🚀 [View Live Demo Here](https://ai-resume-analyzer-mh5n-five.vercel.app/)**
 
-Try the full app — upload a resume, get an AI-powered ATS score, generate cover letters, and explore career growth insights. No installation required.
-
-| | URL |
-| :--- | :--- |
-| 🌐 **Frontend** | (https://ai-resume-analyzer-mh5n-five.vercel.app/) |
-| ⚙️ **Backend API** | (https://ai-resume-analyzer-woad-eight-46.vercel.app/) |
-
 </div>
+
+Try the full app — upload a resume, get an AI-powered ATS score, generate cover letters, and explore personalized career growth insights.
+
+| Service | URL |
+| :--- | :--- |
+| 🌐 **Frontend** | [ai-resume-analyzer-mh5n-five.vercel.app](https://ai-resume-analyzer-mh5n-five.vercel.app/) |
+| ⚙️ **Backend API** | [ai-resume-analyzer-woad-eight-46.vercel.app](https://ai-resume-analyzer-woad-eight-46.vercel.app/) |
 
 ---
 
@@ -65,60 +71,77 @@ Try the full app — upload a resume, get an AI-powered ATS score, generate cove
 
 > **78% of resumes are rejected by ATS systems before a human ever reads them.**
 
-Job seekers spend hours crafting resumes — only to be silently filtered out. They never know *why* they're rejected, which keywords are missing, or how to tailor their resume for each role. The feedback loop is completely broken.
+Job seekers spend hours crafting resumes — only to be silently filtered out. They often don't know why they're rejected, which keywords are missing, or how to tailor their resume for each role.
 
-**AI Resume Analyzer** fixes this. It's a full-stack SaaS platform that acts as your **personal AI recruiter**. Upload your resume once and instantly get a multi-dimensional ATS score, the exact keywords you're missing, AI-generated cover letters,  and a complete career growth roadmap. All powered by Google Gemini AI. No guesswork. No more rejections.
+**AI Resume Analyzer** solves this problem by acting as a **personal AI recruiter**.
+
+Upload a resume and get:
+
+- Multi-dimensional ATS scoring
+- Missing keyword identification
+- Semantic job matching
+- AI-generated cover letters and professional bios
+- Resume visualizations
+- Personalized career growth insights
+- Downloadable PDF reports
+
+Powered by **Google Gemini AI**, the platform provides actionable insights to help users improve their resumes and career prospects.
 
 ---
 
 ## 🖼 App Showcase
 
 ### 🏠 1. Landing Page & Value Proposition
-<img src="./assets/landing-page.jpg" width="100%" />
+
+<img src="./assets/landing-page.jpg" width="100%" alt="Landing Page" />
 
 ### 🔐 2. Frictionless Authentication (Sign In & Register)
+
 <p align="center">
   <img src="./assets/auth1.jpg" width="49%" alt="Sign In Page" />
   <img src="./assets/auth2.jpg" width="49%" alt="Create Account Page" />
 </p>
 
 ### 📊 3. User Dashboard & History
-<img src="./assets/dashboard.jpg" width="100%" />
+
+<img src="./assets/dashboard.jpg" width="100%" alt="User Dashboard" />
 
 ### 🧠 4. Multi-Dimensional ATS Scoring
-<img src="./assets/analysis.jpg" width="100%" />
+
+<img src="./assets/analysis.jpg" width="100%" alt="ATS Analysis" />
 
 ### 🎯 5. Job Match & Skill Gap Analysis
-<img src="./assets/job-match.jpg" width="100%" />
 
-### ✍️ 6. AI Content Generator (Cover Letters & Bios)
-<img src="./assets/content-generator.jpg" width="100%" />
+<img src="./assets/job-match.jpg" width="100%" alt="Job Match and Skill Gap Analysis" />
+
+### ✍️ 6. AI Content Generator
+
+<img src="./assets/content-generator.jpg" width="100%" alt="AI Content Generator" />
 
 ### 🚀 7. Career Growth Hub & Projects
-<img src="./assets/career-hub.jpg" width="100%" />
+
+<img src="./assets/career-hub.jpg" width="100%" alt="Career Growth Hub and Projects" />
 
 ### 👤 8. User Profile & Preferences
-<img src="./assets/profile.jpg" width="100%" />
 
----/) · [Get Started](#-getting-started) · [Features](#-core-features) · [Architecture](#-system-architecture)
-
-</div>
+<img src="./assets/profile.jpg" width="100%" alt="User Profile and Preferences" />
 
 ---
+
 ## 🚀 Core Features
 
 | Feature | Description |
-| :------ | :---------- |
-| **📊 Multi-Dimensional ATS Scoring** | Scored across Grammar, Impact & Action Verbs, Formatting, and Keyword Density — each with animated progress cards |
-| **🧠 Dynamic Domain Classification** | Auto-detects Corporate vs. Academic CVs — academic CVs aren't penalized for length or publications |
-| **🎯 Semantic Job Matching** | Paste a JD or URL — semantic matching catches synonyms (Azure = Microsoft Azure, Collaborated = Collaboration) |
-| **✍️ AI Content Generation** | Cover letters, LinkedIn summaries, professional bios — with proper sign-off, no markdown artifacts, clean PDF export |
-| **🚀 Career Growth Hub** | AI career roadmaps (Current → Next Role) + complexity-aware project suggestions |
-| **🔍 Resume Visualizations** | Skills word cloud, top technologies chart, highlighted resume preview with toggleable categories |
-| **📄 PDF Reports** | Branded A4 exports with sanitized text, smart page breaks, and multi-page support |
-| **🛡️ Google OAuth + JWT** | Frictionless sign-in with Google or email/password with stateless JWT architecture |
-| **🔄 PLG Onboarding** | Interactive landing page dropzone → fake scan → blurred teaser → signup conversion funnel |
-| **⭐ In-App Feedback** | Floating 5-star feedback widget on every dashboard page |
+| :--- | :--- |
+| **📊 Multi-Dimensional ATS Scoring** | Evaluates Grammar, Impact & Action Verbs, Formatting, and Keyword Density with detailed scoring and visual insights |
+| **🧠 Dynamic Domain Classification** | Automatically identifies the resume's professional domain and adapts analysis accordingly |
+| **🎯 Semantic Job Matching** | Compares resumes with job descriptions or job URLs using semantic matching and identifies relevant skills and gaps |
+| **✍️ AI Content Generation** | Generates professional cover letters, LinkedIn summaries, and bios tailored to the user's resume |
+| **🚀 Career Growth Hub** | Provides AI-powered career roadmaps and personalized project suggestions for skill development |
+| **🔍 Resume Visualizations** | Displays skill clouds, technology charts, resume statistics, and an AI-highlighted resume preview |
+| **📄 PDF Reports** | Generates clean, professional PDF reports with structured resume analysis and insights |
+| **🛡️ Google OAuth + JWT** | Supports secure authentication using Google OAuth as well as email/password with JWT-based sessions |
+| **🔄 PLG Onboarding** | Interactive landing-page onboarding experience with resume upload and guided analysis preview |
+| **⭐ In-App Feedback** | Allows users to submit ratings and feedback directly from the application |
 
 ---
 
@@ -127,30 +150,30 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 ### Frontend
 
 | Technology | Version | Purpose |
-| :--------- | :------ | :------ |
+| :--- | :--- | :--- |
 | React | 19 | UI framework |
-| TypeScript | 5.9 | Type safety |
-| Vite | 8 | Build tool & dev server |
+| TypeScript | 5.9 | Type-safe development |
+| Vite | 8 | Build tool and development server |
 | TailwindCSS | 4 | Utility-first styling |
-| Framer Motion | 12 | Animations & transitions |
-| Recharts | 3 | Data visualization (charts) |
+| Framer Motion | 12 | Animations and transitions |
+| Recharts | 3 | Data visualization |
 | Zustand | 5 | Lightweight state management |
-| React Router | 7 | Client-side routing |  
-| @react-oauth/google | Latest | Google sign-in button |
+| React Router | 7 | Client-side routing |
+| @react-oauth/google | Latest | Google OAuth authentication |
 
 ### Backend & AI
 
 | Technology | Version | Purpose |
-| :--------- | :------ | :------ |
+| :--- | :--- | :--- |
 | Node.js | 22 | JavaScript runtime |
-| Express | 4 | HTTP server framework |
+| Express | 4 | Backend API framework |
 | Prisma | 6 | ORM for MongoDB |
 | MongoDB Atlas | — | Cloud database |
-| Gemini 2.5 Flash | Latest | AI analysis & generation |
-| Natural.js | 8 | NLP: TF-IDF, Porter Stemmer |
-| google-auth-library | Latest | OAuth token verification |
-| Cheerio | Latest | Web scraping (job URLs) |
-| jsPDF + autoTable | Latest | Server-quality PDF generation |
+| Gemini 2.5 Flash | Latest | AI-powered resume analysis and content generation |
+| Natural.js | 8 | NLP processing, TF-IDF, and stemming |
+| google-auth-library | Latest | Google OAuth token verification |
+| Cheerio | Latest | Job URL parsing and web scraping |
+| jsPDF + autoTable | Latest | PDF report generation |
 
 ---
 
@@ -158,6 +181,7 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 
 ```mermaid
 flowchart TB
+
     subgraph Client["Frontend - React + Vite"]
         UI["Pages & Components"]
         Store["Zustand Auth Store"]
@@ -166,12 +190,12 @@ flowchart TB
 
     subgraph Server["Backend - Express.js"]
         Routes["API Routes"]
-        MW["Middlewares"]
+        MW["Authentication & Error Handling"]
         Ctrl["Controllers"]
         Svc["Service Layer"]
     end
 
-    subgraph AI["AI Layer"]
+    subgraph AI["AI & NLP Layer"]
         Gemini["Gemini 2.5 Flash"]
         NLP["NLP Engine"]
         OCR["Gemini Vision OCR"]
@@ -183,259 +207,160 @@ flowchart TB
     end
 
     subgraph Ext["External Services"]
-    
         GoogleAPI["Google OAuth"]
     end
 
     UI --> Axios
     Axios -->|"REST + JWT"| Routes
     Routes --> MW
+    Routes --> Ctrl
     Ctrl --> Svc
+
     Svc --> Gemini
     Svc --> NLP
     Svc --> OCR
-    Svc --> Prisma
-    Prisma --> Mongo
-    Store -.-> GoogleAPI
 
 
-### Request Lifecycle
-
-```
-User clicks "Analyze Resume"
-  → React component → Axios (JWT header attached)
-  → Express Route → authenticate() middleware
-  → Controller → Service → Gemini AI + NLP Engine
-  → X-AI-Credits-Remaining header set
-  → Frontend receives data + updates UI + shows toast
-```
-
----
-
-## 🗃 Database Schema
-
-```mermaid
-erDiagram
-    USER ||--o{ RESUME : uploads
-    RESUME ||--o| ANALYSIS : has
-
-    USER {
-        string id PK
-        string name
-        string email UK
-        string password
-        string role
-        datetime createdAt
-    }
-
-    RESUME {
-        string id PK
-        string userId FK
-        string fileUrl
-        string fileName
-        int atsScore
-        datetime createdAt
-    }
-
-    ANALYSIS {
-        string id PK
-        string resumeId FK
-        int skillsScore
-        int experienceScore
-        int educationScore
-        int projectsScore
-        int jobMatchScore
-        string_array keywords
-        string_array missingKeywords
-        string_array suggestions
-    }
-
-    FEEDBACK {
-        string id PK
-        string userId FK
-        int rating
-        string comment
-        datetime createdAt
-    }
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org) v18 or higher
-- [MongoDB Atlas](https://mongodb.com/atlas) account (free tier works)
-- [Gemini API Key](https://ai.google.dev) from Google AI Studio
- 
-
-
-🎉 Open **http://localhost:3000** and start analyzing resumes!
-
----
-
-## 🔐 Environment Variables
-
-### Backend — `backend/.env`
-
-```bash
-# Server
+🔐 Environment Variables
+Backend — backend/.env
 NODE_ENV=development
 PORT=5000
 
-# Database
-DATABASE_URL=mongodb+srv://your-user:your-pass@cluster.mongodb.net/ai_resume_analyzer
+DATABASE_URL=mongodb+srv://your-user:your-password@cluster.mongodb.net/ai_resume_analyzer
 
-# Authentication
-JWT_SECRET=your-super-secret-jwt-key-change-this
+JWT_SECRET=your-super-secret-jwt-key
 JWT_EXPIRES_IN=7d
+
 GOOGLE_CLIENT_ID=your-google-oauth-client-id.apps.googleusercontent.com
 
-# File Uploads
 UPLOAD_DIR=./uploads
 MAX_FILE_SIZE=5242880
 
-# CORS
 CORS_ORIGIN=http://localhost:3000
 
-# AI
 GEMINI_API_KEY=your-gemini-api-key
 
 FRONTEND_URL=http://localhost:3000
 
-# Admin
 ADMIN_EMAIL=your-admin-email@gmail.com
-```
+    Svc --> Prisma
+    Prisma --> Mongo
 
-### Frontend — `frontend/.env`
+    Store -.-> GoogleAPI
 
-```bash
+
+Frontend — frontend/.env
 VITE_APP_NAME=AI Resume Analyzer
 VITE_API_URL=http://localhost:5000/api
 VITE_GOOGLE_CLIENT_ID=your-google-oauth-client-id.apps.googleusercontent.com
-```
 
----
-
-## 🗂 Folder Structure
-
-```
+📁 Folder Structure
 ai-resume-analyzer/
-├── frontend/                 # React 19 + TypeScript + Vite + TailwindCSS
+├── frontend/
 │   ├── src/
-│   │   ├── api/              # Axios client & API wrappers
-│   │   ├── components/       # Reusable UI (charts, layout, gates)
-│   │   ├── pages/            # 15+ pages (dashboard, auth, landing)
-│   │   ├── hooks/            # Zustand auth store, theme
-│   │   ├── utils/            # PDF generation, sanitization
-│   │   └── routes/           # Protected routes & router config
+│   │   ├── api/              # Axios client and API wrappers
+│   │   ├── components/       # Reusable UI components and layouts
+│   │   ├── pages/            # Landing, authentication and dashboard pages
+│   │   ├── hooks/            # Authentication and theme hooks
+│   │   ├── utils/            # PDF generation and utilities
+│   │   └── routes/           # Protected routes and router configuration
 │   └── index.html
 │
-├── backend/                  # Node.js + Express + Prisma + Gemini AI
-│   ├── prisma/               # MongoDB schema (User, Resume, Analysis)
+├── backend/
+│   ├── prisma/               # Prisma schema for MongoDB
 │   ├── src/
-│   │   ├── controllers/      # Auth & Analysis endpoints
-│   │   ├── services/         # AI engine (2500+ LOC), LLM prompts, NLP
-│   │   ├── middlewares/      # JWT auth, credit gating, error handler
-│   │   ├── routes/           # 20+ REST API routes
-│   │   ├── validators/       # Zod request schemas
-│   │   └── server.ts         # Express entry point
-│   └── uploads/              # Resume file storage
+│   │   ├── controllers/      # Authentication and analysis controllers
+│   │   ├── services/         # AI, analysis and NLP services
+│   │   ├── middlewares/      # Authentication and error handling
+│   │   ├── routes/            # REST API routes
+│   │   ├── validators/        # Zod request validation
+│   │   └── server.ts          # Express server entry point
+│   └── uploads/               # Uploaded resume files
 │
-├── assets/                   # README screenshots
+├── assets/                    # README screenshots
+├── .gitignore
 └── README.md
-```
 
----
-
-## 📁 Project Structure
-
-<details>
-<summary><strong>Click to expand full tree</strong></summary>
-
-```
+🗂️ Project Structure
+<details> <summary><strong>Click to expand full tree</strong></summary>
 ai-resume-analyzer/
 │
 ├── backend/
 │   ├── prisma/
-│   │   └── schema.prisma              # User, Resume, Analysis, Feedback
+│   │   └── schema.prisma
+│   │
 │   ├── src/
 │   │   ├── config/
-│   │   │   ├── database.ts            # Prisma client singleton
-│   │   │   ├── env.ts                 # Environment variables
-│   │   │   └── multer.ts              # File upload config
+│   │   │   ├── database.ts
+│   │   │   ├── env.ts
+│   │   │   └── multer.ts
+│   │   │
 │   │   ├── controllers/
-│   │   │   ├── auth.controller.ts     # Login, Register, Google OAuth
-│   │   │   └── analysis.controller.ts # 30+ AI analysis endpoints
+│   │   │   ├── auth.controller.ts
+│   │   │   └── analysis.controller.ts
+│   │   │
 │   │   ├── helpers/
-│   │   │   ├── jwt.ts                 # Token generation & verification
-│   │   │   ├── password.ts            # Bcrypt hashing
-│   │   │   └── response.ts            # Standardized API responses
+│   │   │   ├── jwt.ts
+│   │   │   ├── password.ts
+│   │   │   └── response.ts
+│   │   │
 │   │   ├── middlewares/
-│   │   │   ├── auth.ts                # JWT authentication guard
-│   │   │     check & deduction
-│   │   │   └── errorHandler.ts        # Global error + 429 handling
+│   │   │   ├── auth.ts
+│   │   │   └── errorHandler.ts
+│   │   │
 │   │   ├── routes/
-│   │   │   ├── auth.routes.ts         # /api/auth/*
-│   │   │   ├── analysis.routes.ts     # /api/analysis/* (20+ routes)
-│   │   │        (checkout, webhook)
-│   │   │   └── feedback.routes.ts     # /api/feedback
+│   │   │   ├── auth.routes.ts
+│   │   │   ├── analysis.routes.ts
+│   │   │   └── feedback.routes.ts
+│   │   │
 │   │   ├── services/
-│   │   │   ├── analysis.service.ts    # Core engine (2500+ lines)
-│   │   │   ├── auth.service.ts        # User authentication logic
-│   │   │   ├── llm.service.ts         # Gemini AI prompts (750+ lines)
-│   │   │   └── nlp.engine.ts          # TF-IDF, stemming, classification
-│   │   ├── validators/                # Zod request schemas
-│   │   └── server.ts                  # Express app entry point
-│   └── uploads/                       # Resume file storage
+│   │   │   ├── analysis.service.ts
+│   │   │   ├── auth.service.ts
+│   │   │   ├── llm.service.ts
+│   │   │   └── nlp.engine.ts
+│   │   │
+│   │   ├── validators/
+│   │   └── server.ts
+│   │
+│   └── uploads/
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── api/
-│   │   │   ├── client.ts              # Axios + interceptors (401/403/429)
-│   │   │   ├── auth.ts                # Auth API calls
-│   │   │   └── resume.ts              # 25+ analysis API methods
+│   │   │   ├── client.ts
+│   │   │   ├── auth.ts
+│   │   │   └── resume.ts
+│   │   │
 │   │   ├── components/
-│   │   │   ├── layout/                # Sidebar, Navbar, DashboardLayout
-│   │   │   ├── charts/                # AtsScore, SkillsRadar, JobMatchBar
-│   │   │   ├── ui/                    # Button, Card, Badge, Skeleton
-│   │   │   ├── ProGate.tsx            # Credit-based feature gating
-│   │   │   ├── FeedbackModal.tsx      # Floating feedback widget
-│   │   │   └── SocialAuthButtons.tsx  # Google OAuth button
+│   │   │   ├── layout/
+│   │   │   ├── charts/
+│   │   │   ├── ui/
+│   │   │   ├── FeedbackModal.tsx
+│   │   │   └── SocialAuthButtons.tsx
+│   │   │
 │   │   ├── pages/
-│   │   │   ├── Home.tsx               # Landing page (PLG dropzone)
-│   │   │             
-│   │   │   ├── NotFound.tsx           # Custom 404
-│   │   │   ├── auth/                  # Login, Register
-│   │   │   └── dashboard/             # 15+ dashboard pages
-│   │   ├── hooks/                     # useAuth (Zustand), useTheme
-│   │   ├── data/                      # Sample resume mock data
-│   │   ├── utils/                     # PDF gen, sanitization, constants
-│   │   └── routes/                    # Router config + ProtectedRoute
+│   │   │   ├── Home.tsx
+│   │   │   ├── NotFound.tsx
+│   │   │   ├── auth/
+│   │   │   └── dashboard/
+│   │   │
+│   │   ├── hooks/
+│   │   ├── data/
+│   │   ├── utils/
+│   │   └── routes/
+│   │
 │   └── index.html
 │
-├── assets/                            # README screenshots
-│   ├── landing-page.jpg
-│   ├──
-│   ├── auth.jpg
-│   ├── dashboard.jpg
-│   ├── analysis.jpg
-│   ├── job-match.jpg
-│   ├── career-hub.jpg
-│   
-│
+├── assets/
+├── .gitignore
 └── README.md
-```
 </details>
+"The best way to predict the future is to build it."
 
-<br/>
-
-> *"The best way to predict the future is to build it."*
-
-<br/>
+<div align="center">
 
 Made with ❤️ and ☕ — If you found this useful, a ⭐ on the repo means the world!
 
-</div>
+</div> ```
+
 
