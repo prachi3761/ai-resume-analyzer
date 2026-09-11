@@ -220,7 +220,6 @@ flowchart TB
     Svc --> NLP
     Svc --> OCR
 
-
 🔐 Environment Variables
 Backend — backend/.env
 NODE_ENV=development
