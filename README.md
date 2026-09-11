@@ -19,6 +19,34 @@
 [![Gemini](https://img.shields.io/badge/Gemini_AI-2.5-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-mh5n-five.vercel.app/)
 
+
+<br/>
+
+![AI Resume Analyzer](./assets/landing-page.jpg)
+
+<br/>
+
+[Live Demo](<div align="center">
+
+# 🧠 AI Resume Analyzer & Job Matcher
+
+### *Your Personal AI Recruiter — Land Your Dream Job Faster*
+
+<br/>
+
+### 🚀 **[▶ View Live Demo](https://ai-resume-analyzer-mh5n-five.vercel.app/)**
+
+<br/>
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Node.js](https://img.shields.io/badge/Node.js-22-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
+[![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io)
+[![Gemini](https://img.shields.io/badge/Gemini_AI-2.5-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-mh5n-five.vercel.app//)
+
 <br/>
 
 ![AI Resume Analyzer](./assets/landing-page.jpg)
@@ -102,6 +130,87 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 ### 🚀 7. Career Growth Hub & Projects
 <img src="./assets/career-hub.jpg" width="100%" />
 
+
+### 👤 8. User Profile & Preferences
+<img src="./assets/profile.jpg" width="100%" />
+
+---/) · [Get Started](#-getting-started) · [Features](#-core-features) · [Architecture](#-system-architecture)
+
+</div>
+
+---
+
+## 📑 Table of Contents
+
+- [Live Demo](#-live-demo)
+- [The Problem & Solution](#-the-problem--solution)
+- [App Showcase](#-app-showcase)
+- [Core Features](#-core-features)
+- [Tech Stack](#-tech-stack)
+- [System Architecture](#-system-architecture)
+- [Database Schema](#-database-schema)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
+- [Folder Structure](#-folder-structure)
+- [Project Structure](#-project-structure)
+
+---
+
+## 🚀 Live Demo
+
+<div align="center">
+
+**🚀 [View Live Demo Here](https://ai-resume-analyzer-mh5n-five.vercel.app/)**
+
+Try the full app — upload a resume, get an AI-powered ATS score, generate cover letters, and explore career growth insights. No installation required.
+
+| | URL |
+| :--- | :--- |
+| 🌐 **Frontend** | [https://ai-resume-analyzer-mh5n-five.vercel.app/](https://ai-resume-analyzer-mh5n-five.vercel.app/) |
+| ⚙️ **Backend API** | [https://ai-resume-analyzer-pvqz9i220-prachis-projects-36151363.vercel.app/](https://ai-resume-analyzer-woad-eight-46.vercel.app/) |
+
+</div>
+
+---
+
+## 💡 The Problem & Solution
+
+> **78% of resumes are rejected by ATS systems before a human ever reads them.**
+
+Job seekers spend hours crafting resumes — only to be silently filtered out. They never know *why* they're rejected, which keywords are missing, or how to tailor their resume for each role. The feedback loop is completely broken.
+
+**AI Resume Analyzer** fixes this. It's a full-stack SaaS platform that acts as your **personal AI recruiter**. Upload your resume once and instantly get a multi-dimensional ATS score, the exact keywords you're missing, AI-generated cover letters, 
+
+---
+
+## 🖼 App Showcase
+
+### 🏠 1. Landing Page & Value Proposition
+<img src="./assets/landing-page.jpg" width="100%" />
+
+
+### 🔐 2. Frictionless Authentication (Sign In & Register)
+<p align="center">
+  <img src="./assets/auth1.jpg" width="49%" alt="Sign In Page" />
+  <img src="./assets/auth2.jpg" width="49%" alt="Create Account Page" />
+</p>
+
+### 📊 3. User Dashboard & History
+<img src="./assets/dashboard.jpg" width="100%" />
+
+### 🧠 4. Multi-Dimensional ATS Scoring
+<img src="./assets/analysis.jpg" width="100%" />
+
+### 🎯 5. Job Match & Skill Gap Analysis
+<img src="./assets/job-match.jpg" width="100%" />
+
+### ✍️ 6. AI Content Generator (Cover Letters & Bios)
+<img src="./assets/content-generator.jpg" width="100%" />
+
+### 🚀 7. Career Growth Hub & Projects
+<img src="./assets/career-hub.jpg" width="100%" />
+
+
 ### 👤 8. User Profile & Preferences
 <img src="./assets/profile.jpg" width="100%" />
 
@@ -115,7 +224,6 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 | **🧠 Dynamic Domain Classification** | Auto-detects Corporate vs. Academic CVs — academic CVs aren't penalized for length or publications |
 | **🎯 Semantic Job Matching** | Paste a JD or URL — semantic matching catches synonyms (Azure = Microsoft Azure, Collaborated = Collaboration) |
 | **✍️ AI Content Generation** | Cover letters, LinkedIn summaries, professional bios — with proper sign-off, no markdown artifacts, clean PDF export |
-
 | **🚀 Career Growth Hub** | AI career roadmaps (Current → Next Role) + complexity-aware project suggestions |
 | **🔍 Resume Visualizations** | Skills word cloud, top technologies chart, highlighted resume preview with toggleable categories |
 | **📄 PDF Reports** | Branded A4 exports with sanitized text, smart page breaks, and multi-page support |
@@ -138,7 +246,7 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 | Framer Motion | 12 | Animations & transitions |
 | Recharts | 3 | Data visualization (charts) |
 | Zustand | 5 | Lightweight state management |
-| React Router | 7 | Client-side routing |
+| React Router | 7 | Client-side routing |  
 | @react-oauth/google | Latest | Google sign-in button |
 
 ### Backend & AI
@@ -155,7 +263,7 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 | Cheerio | Latest | Web scraping (job URLs) |
 | jsPDF + autoTable | Latest | Server-quality PDF generation |
 
-
+---
 
 ## 🏗 System Architecture
 
@@ -186,6 +294,7 @@ flowchart TB
     end
 
     subgraph Ext["External Services"]
+    
         GoogleAPI["Google OAuth"]
     end
 
@@ -197,9 +306,9 @@ flowchart TB
     Svc --> NLP
     Svc --> OCR
     Svc --> Prisma
-    Prisma --> Mongodb
+    Prisma --> Mongo
     Store -.-> GoogleAPI
-```
+
 
 ### Request Lifecycle
 
@@ -208,10 +317,11 @@ User clicks "Analyze Resume"
   → React component → Axios (JWT header attached)
   → Express Route → authenticate() middleware
   → Controller → Service → Gemini AI + NLP Engine
-  → Response built → deductCredit() called
   → X-AI-Credits-Remaining header set
   → Frontend receives data + updates UI + shows toast
+```
 
+---
 
 ## 🗃 Database Schema
 
@@ -226,7 +336,6 @@ erDiagram
         string email UK
         string password
         string role
-        boolean isPro
         datetime createdAt
     }
 
@@ -258,7 +367,10 @@ erDiagram
         int rating
         string comment
         datetime createdAt
+    }
+```
 
+---
 
 ## 🚀 Getting Started
 
@@ -267,6 +379,8 @@ erDiagram
 - [Node.js](https://nodejs.org) v18 or higher
 - [MongoDB Atlas](https://mongodb.com/atlas) account (free tier works)
 - [Gemini API Key](https://ai.google.dev) from Google AI Studio
+ 
+
 
 🎉 Open **http://localhost:3000** and start analyzing resumes!
 
@@ -301,14 +415,15 @@ GEMINI_API_KEY=your-gemini-api-key
 
 FRONTEND_URL=http://localhost:3000
 
-
+# Admin
+ADMIN_EMAIL=your-admin-email@gmail.com
+```
 
 ### Frontend — `frontend/.env`
 
 ```bash
 VITE_APP_NAME=AI Resume Analyzer
 VITE_API_URL=http://localhost:5000/api
-VITE_STRIPE_PUBLISHABLE_KEY=pk_test_your-stripe-publishable-key
 VITE_GOOGLE_CLIENT_ID=your-google-oauth-client-id.apps.googleusercontent.com
 ```
 
@@ -333,7 +448,7 @@ ai-resume-analyzer/
 │   ├── src/
 │   │   ├── controllers/      # Auth & Analysis endpoints
 │   │   ├── services/         # AI engine (2500+ LOC), LLM prompts, NLP
-│   │   ├── middlewares/      # JWT auth,  error handler
+│   │   ├── middlewares/      # JWT auth, credit gating, error handler
 │   │   ├── routes/           # 20+ REST API routes
 │   │   ├── validators/       # Zod request schemas
 │   │   └── server.ts         # Express entry point
@@ -370,12 +485,12 @@ ai-resume-analyzer/
 │   │   │   └── response.ts            # Standardized API responses
 │   │   ├── middlewares/
 │   │   │   ├── auth.ts                # JWT authentication guard
-│   │   │   ├──           
+│   │   │     check & deduction
 │   │   │   └── errorHandler.ts        # Global error + 429 handling
 │   │   ├── routes/
 │   │   │   ├── auth.routes.ts         # /api/auth/*
 │   │   │   ├── analysis.routes.ts     # /api/analysis/* (20+ routes)
-│   │   │   ├──       
+│   │   │        (checkout, webhook)
 │   │   │   └── feedback.routes.ts     # /api/feedback
 │   │   ├── services/
 │   │   │   ├── analysis.service.ts    # Core engine (2500+ lines)
@@ -401,8 +516,7 @@ ai-resume-analyzer/
 │   │   │   └── SocialAuthButtons.tsx  # Google OAuth button
 │   │   ├── pages/
 │   │   │   ├── Home.tsx               # Landing page (PLG dropzone)
-│   │   │   
-│   │   │   
+│   │   │             
 │   │   │   ├── NotFound.tsx           # Custom 404
 │   │   │   ├── auth/                  # Login, Register
 │   │   │   └── dashboard/             # 15+ dashboard pages
@@ -420,7 +534,21 @@ ai-resume-analyzer/
 │   ├── analysis.jpg
 │   ├── job-match.jpg
 │   ├── career-hub.jpg
-│   └──
+│   
 │
 └── README.md
 ```
+
+</details>
+
+
+<br/>
+
+> *"The best way to predict the future is to build it."*
+
+<br/>
+
+Made with ❤️ and ☕ — If you found this useful, a ⭐ on the repo means the world!
+
+</div>
+
