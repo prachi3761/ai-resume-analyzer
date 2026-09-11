@@ -6,7 +6,7 @@
 
 <br/>
 
-### 🚀 **[▶ View Live Demo](https://aliza-resume-analyzer.vercel.app/)**
+### 🚀 **[▶ View Live Demo](https://ai-resume-analyzer-mh5n-five.vercel.app/)**
 
 <br/>
 
@@ -56,14 +56,14 @@
 
 <div align="center">
 
-**🚀 [View Live Demo Here](https://aliza-resume-analyzer.vercel.app/)**
+**🚀 [View Live Demo Here](https://ai-resume-analyzer-mh5n-five.vercel.app/)**
 
 Try the full app — upload a resume, get an AI-powered ATS score, generate cover letters, and explore career growth insights. No installation required.
 
 | | URL |
 | :--- | :--- |
-| 🌐 **Frontend** | [aliza-resume-analyzer.vercel.app](https://aliza-resume-analyzer.vercel.app/) |
-| ⚙️ **Backend API** | [ai-resume-backend-sable.vercel.app](https://ai-resume-backend-sable.vercel.app/) |
+| 🌐 **Frontend** | (https://ai-resume-analyzer-mh5n-five.vercel.app/) |
+| ⚙️ **Backend API** | (https://ai-resume-analyzer-woad-eight-46.vercel.app/) |
 
 </div>
 
@@ -111,13 +111,7 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 ### 💬 9. Interactive AI Resume Assistant
 <img src="./assets/ai-chat.jpg" width="100%" />
 
-### 📋 10. AI-Generated Interview Preparation
-<img src="./assets/interview-prep.jpg" width="100%" />
-
-### 🎙️ 11. Live Mock Interview Simulator
-<img src="./assets/mock-interview.jpg" width="100%" />
-
-### 👤 12. User Profile & Preferences
+### 👤 10. User Profile & Preferences
 <img src="./assets/profile.jpg" width="100%" />
 
 ---
@@ -130,12 +124,11 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 | **🧠 Dynamic Domain Classification** | Auto-detects Corporate vs. Academic CVs — academic CVs aren't penalized for length or publications |
 | **🎯 Semantic Job Matching** | Paste a JD or URL — semantic matching catches synonyms (Azure = Microsoft Azure, Collaborated = Collaboration) |
 | **✍️ AI Content Generation** | Cover letters, LinkedIn summaries, professional bios — with proper sign-off, no markdown artifacts, clean PDF export |
-| **🎙️ Mock Interview Prep** | 12 personalized questions from your resume + JD-targeted interview predictor with ideal answer strategies |
+
 | **🚀 Career Growth Hub** | AI career roadmaps (Current → Next Role) + complexity-aware project suggestions |
 | **🔍 Resume Visualizations** | Skills word cloud, top technologies chart, highlighted resume preview with toggleable categories |
 | **📄 PDF Reports** | Branded A4 exports with sanitized text, smart page breaks, and multi-page support |
 | **🛡️ Google OAuth + JWT** | Frictionless sign-in with Google or email/password with stateless JWT architecture |
-| **💳 Stripe Monetization** | Credit-based system with Stripe Elements, Hosted Checkout, PaymentIntents, and Webhooks |
 | **🔄 PLG Onboarding** | Interactive landing page dropzone → fake scan → blurred teaser → signup conversion funnel |
 | **⭐ In-App Feedback** | Floating 5-star feedback widget on every dashboard page |
 
@@ -155,7 +148,7 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 | Recharts | 3 | Data visualization (charts) |
 | Zustand | 5 | Lightweight state management |
 | React Router | 7 | Client-side routing |
-| @stripe/stripe-js | Latest | Stripe payment UI |
+| @stripe/stripe-js | Latest |
 | @react-oauth/google | Latest | Google sign-in button |
 
 ### Backend & AI
@@ -284,10 +277,7 @@ erDiagram
         int rating
         string comment
         datetime createdAt
-    }
-```
 
----
 
 ## 🚀 Getting Started
 
@@ -296,51 +286,6 @@ erDiagram
 - [Node.js](https://nodejs.org) v18 or higher
 - [MongoDB Atlas](https://mongodb.com/atlas) account (free tier works)
 - [Gemini API Key](https://ai.google.dev) from Google AI Studio
-- [Stripe Account](https://stripe.com) (optional — for payments)
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/aliza-dev/ai-resume-analyzer.git
-cd ai-resume-analyzer
-```
-
-### 2. Install Backend Dependencies
-
-```bash
-cd backend
-npm install
-```
-
-### 3. Install Frontend Dependencies
-
-```bash
-cd ../frontend
-npm install
-```
-
-### 4. Generate Prisma Client
-
-```bash
-cd ../backend
-npx prisma generate
-```
-
-### 5. Start Development Servers
-
-**Terminal 1 — Backend (port 5000):**
-
-```bash
-cd backend
-npm run dev
-```
-
-**Terminal 2 — Frontend (port 3000):**
-
-```bash
-cd frontend
-npm run dev
-```
 
 🎉 Open **http://localhost:3000** and start analyzing resumes!
 
@@ -379,9 +324,7 @@ STRIPE_WEBHOOK_SECRET=whsec_your-webhook-secret
 STRIPE_PRICE_ID=
 FRONTEND_URL=http://localhost:3000
 
-# Admin
-ADMIN_EMAIL=your-admin-email@gmail.com
-```
+
 
 ### Frontend — `frontend/.env`
 
@@ -413,7 +356,7 @@ ai-resume-analyzer/
 │   ├── src/
 │   │   ├── controllers/      # Auth & Analysis endpoints
 │   │   ├── services/         # AI engine (2500+ LOC), LLM prompts, NLP
-│   │   ├── middlewares/      # JWT auth, credit gating, error handler
+│   │   ├── middlewares/      # JWT auth,  error handler
 │   │   ├── routes/           # 20+ REST API routes
 │   │   ├── validators/       # Zod request schemas
 │   │   └── server.ts         # Express entry point
@@ -450,12 +393,12 @@ ai-resume-analyzer/
 │   │   │   └── response.ts            # Standardized API responses
 │   │   ├── middlewares/
 │   │   │   ├── auth.ts                # JWT authentication guard
-│   │   │   ├── credits.ts             # AI credit check & deduction
+│   │   │   ├──           
 │   │   │   └── errorHandler.ts        # Global error + 429 handling
 │   │   ├── routes/
 │   │   │   ├── auth.routes.ts         # /api/auth/*
 │   │   │   ├── analysis.routes.ts     # /api/analysis/* (20+ routes)
-│   │   │   ├── stripe.routes.ts       # /api/stripe/* (checkout, webhook)
+│   │   │   ├──       
 │   │   │   └── feedback.routes.ts     # /api/feedback
 │   │   ├── services/
 │   │   │   ├── analysis.service.ts    # Core engine (2500+ lines)
@@ -494,88 +437,13 @@ ai-resume-analyzer/
 │
 ├── assets/                            # README screenshots
 │   ├── landing-page.jpg
-│   ├── pricing.jpg
+│   ├──
 │   ├── auth.jpg
 │   ├── dashboard.jpg
 │   ├── analysis.jpg
 │   ├── job-match.jpg
 │   ├── career-hub.jpg
-│   └── mock-interview.jpg
+│   └──
 │
 └── README.md
 ```
-
-</details>
-
----
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an incredible place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. **Fork** the project
-2. **Create** your feature branch
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **Commit** your changes
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. **Push** to the branch
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. **Open** a Pull Request
-
-> **Note:** Please ensure TypeScript compiles cleanly before submitting:
-> ```bash
-> cd frontend && npx tsc --noEmit
-> cd ../backend && npx tsc --noEmit
-> ```
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See [LICENSE](LICENSE) for more information.
-
----
-
-<div align="center">
-
-<br/>
-
-### ⭐ If this project helped you land a job, give it a star on GitHub!
-
-**Built with 💜 by Aliza Tariq**
-
-<br/>
-
-[Report Bug](https://github.com/aliza-dev/ai-resume-analyzer/issues) · [Request Feature](https://github.com/aliza-dev/ai-resume-analyzer/issues)
-
-</div>
-
----
-
-## 🤝 Let's Connect
-
-<div align="center">
-
-I'm always open to collaborations, freelance opportunities, and connecting with fellow developers!
-
-| | Link |
-| :--- | :--- |
-| 💼 **LinkedIn** | [linkedin.com/in/aliza-tariq-dev](https://www.linkedin.com/in/aliza-tariq-dev/) |
-| 🐙 **GitHub** | [github.com/aliza-dev](https://github.com/aliza-dev) |
-| 📧 **Email** | [alizait1192@gmail.com](mailto:alizait1192@gmail.com) |
-
-<br/>
-
-> *"The best way to predict the future is to build it."*
-
-<br/>
-
-Made with ❤️ and ☕ — If you found this useful, a ⭐ on the repo means the world!
-
-</div>
