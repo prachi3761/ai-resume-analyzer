@@ -44,8 +44,7 @@
 - [Environment Variables](#-environment-variables)
 - [Folder Structure](#-folder-structure)
 - [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [License](#-license)
+-
 
 
 ---
@@ -73,7 +72,7 @@ Try the full app — upload a resume, get an AI-powered ATS score, generate cove
 
 Job seekers spend hours crafting resumes — only to be silently filtered out. They never know *why* they're rejected, which keywords are missing, or how to tailor their resume for each role. The feedback loop is completely broken.
 
-**AI Resume Analyzer** fixes this. It's a full-stack SaaS platform that acts as your **personal AI recruiter**. Upload your resume once and instantly get a multi-dimensional ATS score, the exact keywords you're missing, AI-generated cover letters, mock interview questions with answer strategies, and a complete career growth roadmap. All powered by Google Gemini AI. No guesswork. No more rejections.
+**AI Resume Analyzer** fixes this. It's a full-stack SaaS platform that acts as your **personal AI recruiter**. Upload your resume once and instantly get a multi-dimensional ATS score, the exact keywords you're missing, AI-generated cover letters,  and a complete career growth roadmap. All powered by Google Gemini AI. No guesswork. No more rejections.
 
 ---
 
@@ -82,34 +81,31 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 ### 🏠 1. Landing Page & Value Proposition
 <img src="./assets/landing-page.jpg" width="100%" />
 
-### 💳 2. Seamless Monetization & Pricing
-<img src="./assets/pricing.jpg" width="100%" />
-
-### 🔐 3. Frictionless Authentication (Sign In & Register)
+### 🔐 2. Frictionless Authentication (Sign In & Register)
 <p align="center">
   <img src="./assets/auth1.jpg" width="49%" alt="Sign In Page" />
   <img src="./assets/auth2.jpg" width="49%" alt="Create Account Page" />
 </p>
 
-### 📊 4. User Dashboard & History
+### 📊 3. User Dashboard & History
 <img src="./assets/dashboard.jpg" width="100%" />
 
-### 🧠 5. Multi-Dimensional ATS Scoring
+### 🧠 4. Multi-Dimensional ATS Scoring
 <img src="./assets/analysis.jpg" width="100%" />
 
-### 🎯 6. Job Match & Skill Gap Analysis
+### 🎯 5. Job Match & Skill Gap Analysis
 <img src="./assets/job-match.jpg" width="100%" />
 
-### ✍️ 7. AI Content Generator (Cover Letters & Bios)
+### ✍️ 6. AI Content Generator (Cover Letters & Bios)
 <img src="./assets/content-generator.jpg" width="100%" />
 
-### 🚀 8. Career Growth Hub & Projects
+### 🚀 7. Career Growth Hub & Projects
 <img src="./assets/career-hub.jpg" width="100%" />
 
-### 💬 9. Interactive AI Resume Assistant
+### 💬 8. Interactive AI Resume Assistant
 <img src="./assets/ai-chat.jpg" width="100%" />
 
-### 👤 10. User Profile & Preferences
+### 👤 9. User Profile & Preferences
 <img src="./assets/profile.jpg" width="100%" />
 
 ---
@@ -146,7 +142,6 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 | Recharts | 3 | Data visualization (charts) |
 | Zustand | 5 | Lightweight state management |
 | React Router | 7 | Client-side routing |
-| @stripe/stripe-js | Latest |
 | @react-oauth/google | Latest | Google sign-in button |
 
 ### Backend & AI
@@ -159,12 +154,11 @@ Job seekers spend hours crafting resumes — only to be silently filtered out. T
 | MongoDB Atlas | — | Cloud database |
 | Gemini 2.5 Flash | Latest | AI analysis & generation |
 | Natural.js | 8 | NLP: TF-IDF, Porter Stemmer |
-| Stripe | Latest | Payments & subscriptions |
 | google-auth-library | Latest | OAuth token verification |
 | Cheerio | Latest | Web scraping (job URLs) |
 | jsPDF + autoTable | Latest | Server-quality PDF generation |
 
----
+
 
 ## 🏗 System Architecture
 
@@ -195,21 +189,18 @@ flowchart TB
     end
 
     subgraph Ext["External Services"]
-        StripeAPI["Stripe API"]
         GoogleAPI["Google OAuth"]
     end
 
     UI --> Axios
     Axios -->|"REST + JWT"| Routes
     Routes --> MW
-    MW -->|"Auth + Credits"| Ctrl
     Ctrl --> Svc
     Svc --> Gemini
     Svc --> NLP
     Svc --> OCR
     Svc --> Prisma
-    Prisma --> Mongo
-    Routes -.-> StripeAPI
+    Prisma --> Mongodb
     Store -.-> GoogleAPI
 ```
 
@@ -219,14 +210,11 @@ flowchart TB
 User clicks "Analyze Resume"
   → React component → Axios (JWT header attached)
   → Express Route → authenticate() middleware
-  → requireCredits() middleware (checks aiCredits > 0)
   → Controller → Service → Gemini AI + NLP Engine
   → Response built → deductCredit() called
   → X-AI-Credits-Remaining header set
   → Frontend receives data + updates UI + shows toast
-```
 
----
 
 ## 🗃 Database Schema
 
@@ -242,8 +230,6 @@ erDiagram
         string password
         string role
         boolean isPro
-        int aiCredits
-        string stripeCustomerId
         datetime createdAt
     }
 
@@ -316,10 +302,6 @@ CORS_ORIGIN=http://localhost:3000
 # AI
 GEMINI_API_KEY=your-gemini-api-key
 
-# Stripe Payments
-STRIPE_SECRET_KEY=sk_test_your-stripe-secret-key
-STRIPE_WEBHOOK_SECRET=whsec_your-webhook-secret
-STRIPE_PRICE_ID=
 FRONTEND_URL=http://localhost:3000
 
 
@@ -422,8 +404,8 @@ ai-resume-analyzer/
 │   │   │   └── SocialAuthButtons.tsx  # Google OAuth button
 │   │   ├── pages/
 │   │   │   ├── Home.tsx               # Landing page (PLG dropzone)
-│   │   │   ├── Pricing.tsx            # Free vs Pro plans
-│   │   │   ├── Purchase.tsx           # 3-step Stripe checkout
+│   │   │   
+│   │   │   
 │   │   │   ├── NotFound.tsx           # Custom 404
 │   │   │   ├── auth/                  # Login, Register
 │   │   │   └── dashboard/             # 15+ dashboard pages
