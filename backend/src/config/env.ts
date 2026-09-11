@@ -23,7 +23,7 @@ function buildAllowedCorsOrigins(): string[] {
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     // Default production app (Vercel); override/extend with CORS_ORIGIN / FRONTEND_URL
-    "https://aliza-resume-analyzer.vercel.app",
+    "https://ai-resume-analyzer-mh5n-five.vercel.app,
   ]) {
     set.add(o);
   }
