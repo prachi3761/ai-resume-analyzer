@@ -17,7 +17,6 @@
 [![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
 [![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io)
 [![Gemini](https://img.shields.io/badge/Gemini_AI-2.5-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
-[![Stripe](https://img.shields.io/badge/Stripe-Payments-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://aliza-resume-analyzer.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
@@ -27,7 +26,7 @@
 
 <br/>
 
-[Live Demo](https://aliza-resume-analyzer.vercel.app/) · [Get Started](#-getting-started) · [Features](#-core-features) · [Architecture](#-system-architecture)
+[Live Demo](https://ai-resume-analyzer-mh5n-five.vercel.app/) · [Get Started](#-getting-started) · [Features](#-core-features) · [Architecture](#-system-architecture)
 
 </div>
 
@@ -48,7 +47,7 @@
 - [Project Structure](#-project-structure)
 - [Contributing](#-contributing)
 - [License](#-license)
-- [Let's Connect](#-lets-connect)
+
 
 ---
 
