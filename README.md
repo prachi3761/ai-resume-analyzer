@@ -176,7 +176,6 @@ Powered by **Google Gemini AI**, the platform provides actionable insights to he
 | jsPDF + autoTable | Latest | PDF report generation |
 
 ---
-
 ## 🏗 System Architecture
 
 ```mermaid
@@ -219,6 +218,33 @@ flowchart TB
     Svc --> Gemini
     Svc --> NLP
     Svc --> OCR
+```
+
+### Request Lifecycle
+
+```text
+User
+  ↓
+React UI
+  ↓
+Axios Client
+  ↓
+Express API
+  ↓
+Authentication Middleware
+  ↓
+Controller
+  ↓
+Service Layer
+  ↓
+AI / Database / External Services
+  ↓
+Response
+  ↓
+React UI
+```
+
+
 
 🔐 Environment Variables
 Backend — backend/.env
@@ -355,9 +381,7 @@ ai-resume-analyzer/
 └── README.md
 </details>
 "The best way to predict the future is to build it."
-
 <div align="center">
-
 Made with ❤️ and ☕ — If you found this useful, a ⭐ on the repo means the world!
 
 </div> ```
