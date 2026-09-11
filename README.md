@@ -179,46 +179,50 @@ Powered by **Google Gemini AI**, the platform provides actionable insights to he
 ## 🏗 System Architecture
 
 ```mermaid
-flowchart TB
+flowchart LR
 
-    subgraph Client["Frontend - React + Vite"]
-        UI["Pages & Components"]
-        Store["Zustand Auth Store"]
-        Axios["Axios Client"]
+    subgraph Client["Frontend"]
+        UI["React + Vite"]
+        Store["Zustand"]
+        Axios["Axios"]
+        UI --> Store
+        Store --> Axios
     end
 
-    subgraph Server["Backend - Express.js"]
+    subgraph Server["Backend"]
         Routes["API Routes"]
-        MW["Authentication & Error Handling"]
+        Auth["Auth Middleware"]
         Ctrl["Controllers"]
-        Svc["Service Layer"]
+        Svc["Services"]
+        Routes --> Auth
+        Auth --> Ctrl
+        Ctrl --> Svc
     end
 
-    subgraph AI["AI & NLP Layer"]
+    subgraph AI["AI Layer"]
         Gemini["Gemini 2.5 Flash"]
         NLP["NLP Engine"]
         OCR["Gemini Vision OCR"]
     end
 
-    subgraph DB["Data Layer"]
+    subgraph Data["Database"]
         Prisma["Prisma ORM"]
         Mongo[("MongoDB Atlas")]
+        Prisma --> Mongo
     end
 
-    subgraph Ext["External Services"]
-        GoogleAPI["Google OAuth"]
+    subgraph External["External"]
+        Google["Google OAuth"]
     end
 
-    UI --> Axios
     Axios -->|"REST + JWT"| Routes
-    Routes --> MW
-    Routes --> Ctrl
-    Ctrl --> Svc
-
     Svc --> Gemini
     Svc --> NLP
     Svc --> OCR
+    Svc --> Prisma
+    Store -.-> Google
 ```
+
 
 ### Request Lifecycle
 
@@ -307,9 +311,12 @@ VITE_GOOGLE_CLIENT_ID=your-google-oauth-client-id.apps.googleusercontent.com
 ├── .gitignore
 └── README.md
 ```
-
 ## 🗂️ Project Structure
 
+<details>
+<summary><strong>Click to expand full tree</strong></summary>
+
+```text
 ai-resume-analyzer/
 │
 ├── backend/
@@ -380,7 +387,9 @@ ai-resume-analyzer/
 │
 ├── assets/
 ├── .gitignore
+├── package.json
 └── README.md
+
 ```
 </details>
 
